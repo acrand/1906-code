@@ -1,4 +1,4 @@
 1906-code
 =========
 
-Prototyping code
+Prototyping code for web services
