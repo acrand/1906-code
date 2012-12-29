@@ -2,6 +2,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'json'
+require 'rest_client'
 
 #Example paths:
 # Data Services:
@@ -22,7 +23,7 @@ end
 
 get '/hello/:name', :provides => :json do
   pass unless request.accept? 'application/json'
-  "Hello #{params[:name]} in jSON"
+  "Hello #{params[:name]} in jSON".to_json
 end
 
 get '/hello/:name', :provides => :xml do
