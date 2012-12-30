@@ -6,10 +6,10 @@ require 'rest_client'
 
 #Example paths:
 # Data Services:
-# http(s):[Domain]/[Schema]/[Entity]/[ID]
+# http(s):[Domain]/[UID]/[Namespace]/[Entity]/{attributes}
 # CRUD handled by verbs
-# http(s):[Domain]/[Schema]/[Entity]?{filter}
-#http(s):[Domain]/[Schema]/[Entity]/Method
+# http(s):[Domain]/[UID]/[Namespace]/[Entity]/{attributes}?{filter}
+# http(s):[Domain]/[UID]/[Namespace]/[Entity]/{attributes}/Method?
 
 
 =begin
@@ -23,8 +23,14 @@ end
 
 get '/hello/:name', :provides => :json do
   pass unless request.accept? 'application/json'
-  "Hello #{params[:name]} in jSON".to_json
+  "Hello #{params[:name]} in jSON - GET".to_json
 end
+
+post '/hello/:name', :provides => :json do
+  pass unless request.accept? 'application/json'
+  "Hello #{params[:name]} in jSON - POST".to_json
+end
+
 
 get '/hello/:name', :provides => :xml do
   pass unless request.accept? 'application/xml'
