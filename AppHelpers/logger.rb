@@ -1,4 +1,4 @@
-module Logger 
+module ServiceLogger 
   
   LOG_DEBUG = 000
   LOG_ERROR = 250
@@ -13,8 +13,8 @@ module Logger
 
      if level.to_i >= LOG_LEVEL 
        @@log ||= File.open("ds_log.txt", "a")
-       puts "##Log::" +Time.now.to_s  + "::" + SERVICE_NAME + "::"+ method.to_s + "::"+ data +""
-       @@log.puts "##Log::" +Time.now.to_s  + "::" + SERVICE_NAME + "::"+ method.to_s + "::"+ data +""
+       puts "##Log::" +Time.now.to_s  + "::" + SERVICE_NAME + "::"+ method.to_s + "::"+ data +"\n"
+       @@log.puts "##Log::" +Time.now.to_s  + "::" + SERVICE_NAME + "::"+ method.to_s + "::"+ data +"\n"
      end          
   end
     
