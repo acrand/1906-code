@@ -1,0 +1,56 @@
+##Log::Sun Dec 30 10:36:53 -0800 2012::Data Service::initialize::http://localhost:4567/cars?name=honda&color=blue
+##Log::Sun Dec 30 10:36:53 -0800 2012::Data Service::initialize::#<Router::Request:0x1055d5560>
+##Log::Sun Dec 30 10:36:53 -0800 2012::Data Service::createCollection::cars
+##Log::Sun Dec 30 10:36:53 -0800 2012::Data Service::createDocument::DataService
+##Log::Sun Dec 30 10:36:53 -0800 2012::Data Service::parseQuery::name=honda&color=blue
+##Log::Sun Dec 30 10:36:53 -0800 2012::Data Service::parseQuery::color - blue
+##Log::Sun Dec 30 10:36:53 -0800 2012::Data Service::parseQuery::name - honda
+##Log::Sun Dec 30 10:39:12 -0800 2012::Data Service::initialize::http://localhost:4567/cars?name=honda&color=blue
+##Log::Sun Dec 30 10:39:12 -0800 2012::Data Service::initialize::#<Router::Request:0x1066ce5b0>
+##Log::Sun Dec 30 10:39:12 -0800 2012::Data Service::createCollection::cars
+##Log::Sun Dec 30 10:39:12 -0800 2012::Data Service::createDocument::DataService
+##Log::Sun Dec 30 10:39:12 -0800 2012::Data Service::parseQuery::name=honda&color=blue
+##Log::Sun Dec 30 10:39:12 -0800 2012::Data Service::parseQuery::name - honda
+##Log::Sun Dec 30 10:39:12 -0800 2012::Data Service::parseQuery::color - blue
+##Log::Sun Dec 30 11:59:39 -0800 2012::Data Service::initialize::http://localhost:4567/cars?name=honda&color=blue
+##Log::Sun Dec 30 11:59:39 -0800 2012::Data Service::initialize::#<Router::Request:0x10e7a3b18>
+##Log::Sun Dec 30 11:59:39 -0800 2012::Data Service::createCollection::cars
+##Log::Sun Dec 30 11:59:39 -0800 2012::Data Service::createDocument::DataService
+##Log::Sun Dec 30 11:59:39 -0800 2012::Data Service::parseQuery::name=honda&color=blue
+##Log::Sun Dec 30 11:59:39 -0800 2012::Data Service::parseQuery::color - blue
+##Log::Sun Dec 30 11:59:39 -0800 2012::Data Service::parseQuery::name - honda
+##Log::Sun Dec 30 12:07:02 -0800 2012::Data Service::initialize::http://localhost:4567/cars?name=honda&color=blue
+##Log::Sun Dec 30 12:07:02 -0800 2012::Data Service::initialize::#<Router::Request:0x10ae15b80>
+##Log::Sun Dec 30 12:07:02 -0800 2012::Data Service::createCollection::cars
+##Log::Sun Dec 30 12:07:02 -0800 2012::Data Service::createDocument::DataService
+##Log::Sun Dec 30 12:07:02 -0800 2012::Data Service::parseQuery::name=honda&color=blue
+##Log::Sun Dec 30 12:07:02 -0800 2012::Data Service::parseQuery::name - honda
+##Log::Sun Dec 30 12:07:02 -0800 2012::Data Service::parseQuery::color - blue
+##Log::Sun Dec 30 13:26:41 -0800 2012::Data Service::GET /hello/:name::Hello james in jSON - GET
+##Log::Sun Dec 30 13:26:41 -0800 2012::Data Service::POST /hello/:name::"Hello james in jSON - POST"
+##Log::Sun Dec 30 13:26:41 -0800 2012::Data Service::DELETE /hello/:name::Hello james in jSON - delete
+##Log::Sun Dec 30 13:28:03 -0800 2012::Data Service::GET /hello/:name::Hello james in jSON - GET
+##Log::Sun Dec 30 13:28:03 -0800 2012::Data Service::POST /hello/:name::"Hello james in jSON - POST"
+##Log::Sun Dec 30 13:28:03 -0800 2012::Data Service::DELETE /hello/:name::Hello james in jSON - delete
+##Log::Sun Dec 30 13:28:32 -0800 2012::Data Service::GET /hello/:name::Hello james in jSON - GET
+##Log::Sun Dec 30 13:28:32 -0800 2012::Data Service::POST /hello/:name::"Hello james in jSON - POST"
+##Log::Sun Dec 30 13:28:32 -0800 2012::Data Service::DELETE /hello/:name::Hello james in jSON - delete
+##Log::Sun Dec 30 13:30:15 -0800 2012::Data Service::GET /hello/:name::Hello james in jSON - GET
+##Log::Sun Dec 30 13:30:15 -0800 2012::Data Service::POST /hello/:name::"Hello james in jSON - POST"
+##Log::Sun Dec 30 13:30:20 -0800 2012::Data Service::GET /hello/:name::Hello james in jSON - GET
+##Log::Sun Dec 30 13:30:20 -0800 2012::Data Service::POST /hello/:name::"Hello james in jSON - POST"
+##Log::Sun Dec 30 13:30:23 -0800 2012::Data Service::GET /hello/:name::Hello james in jSON - GET
+##Log::Sun Dec 30 13:30:23 -0800 2012::Data Service::POST /hello/:name::"Hello james in jSON - POST"
+##Log::Sun Dec 30 13:30:32 -0800 2012::Data Service::GET /hello/:name::Hello james in jSON - GET
+##Log::Sun Dec 30 13:30:32 -0800 2012::Data Service::POST /hello/:name::"Hello james in jSON - POST"
+##Log::Sun Dec 30 13:30:47 -0800 2012::Data Service::POST /hello/:name::"Hello james in jSON - POST"
+##Log::Sun Dec 30 13:30:47 -0800 2012::Data Service::GET /hello/:name::Hello james in jSON - GET
+##Log::Sun Dec 30 13:39:41 -0800 2012::Data Service::GET /hello/:name::Hello james in jSON - GET
+##Log::Sun Dec 30 13:39:41 -0800 2012::Data Service::POST /hello/:name::"Hello james in jSON - POST"
+##Log::Sun Dec 30 13:39:43 -0800 2012::Data Service::GET /hello/:name::Hello james in jSON - GET
+##Log::Sun Dec 30 13:39:43 -0800 2012::Data Service::POST /hello/:name::"Hello james in jSON - POST"
+##Log::Sun Dec 30 13:41:14 -0800 2012::Data Service::GET /hello/:name::Hello james in jSON - GET
+##Log::Sun Dec 30 13:41:17 -0800 2012::Data Service::GET /hello/:name::Hello james in jSON - GET
+##Log::Sun Dec 30 13:42:07 -0800 2012::Data Service::GET /hello/:name::Hello james in jSON - GET
+##Log::Sun Dec 30 13:42:15 -0800 2012::Data Service::GET /hello/:name::Hello james in jSON - GET
+##Log::Sun Dec 30 13:42:18 -0800 2012::Data Service::GET /hello/:name::Hello james in jSON - GET

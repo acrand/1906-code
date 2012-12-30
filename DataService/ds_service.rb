@@ -5,7 +5,7 @@ require 'cgi'
 require 'json'
 require '../AppHelpers/logger'
 
-include Logger
+include ServiceLogger
   
   
 #Module for Data Service web service
@@ -15,8 +15,8 @@ module DataService
   include Mongo
   
   #set logger properties
-  Logger::LOG_LEVEL = Logger::LOG_DEBUG 
-  Logger::SERVICE_NAME = "Data Service"
+  ServiceLogger::LOG_LEVEL = ServiceLogger::LOG_DEBUG 
+  ServiceLogger::SERVICE_NAME = "Data Service"
   
   #TODO move to config yml of config loop - static variables 
   @client = MongoClient.new('localhost', 27017)
@@ -46,7 +46,7 @@ module DataService
 =end
   #initialize data service with URI 
   def self.initialize(request)
-     Logger.log(LOG_INFO, __method__, request.to_s)
+    ServiceLogger.log(LOG_INFO, __method__, request.to_s)
 
      self.createCollection(request.entity) 
      
@@ -82,23 +82,23 @@ module DataService
  
   def self.parseQuery(query)
      
-     Logger.log(LOG_INFO, __method__, query)
+    ServiceLogger.log(LOG_INFO, __method__, query)
      
      CGI::parse(query).each do |key , value|
         #puts key + " - " + value[0]  
-        Logger.log(LOG_DEBUG, __method__, key + " - " + value[0])   
+        ServiceLogger.log(LOG_DEBUG, __method__, key + " - " + value[0])   
      end   
   end
   
   def self.createCollection(name)
-    Logger.log(LOG_INFO, __method__, name)
+    ServiceLogger.log(LOG_INFO, __method__, name)
     
     @collection = @db[name]
     
   end
   
   def self.dropCollection(name)
-    Logger.log(LOG_INFO, __method__, name)
+    ServiceLogger.log(LOG_INFO, __method__, name)
     
     @collection = @db[name]
     @collection.drop
@@ -106,19 +106,20 @@ module DataService
   end
   
   def self.collectionExist(name)
-    Logger.log(LOG_INFO, __method__, name)
+    ServiceLogger.log(LOG_INFO, __method__, name)
     #TODO iterate collwctions    
     
   end
   
   def self.createDocument(attributes)
-    Logger.log(LOG_INFO, __method__, name)
+    ServiceLogger.log(LOG_INFO, __method__, name)
     
     @collection.insert(CGI::parse(attributes))
   end
   
 end
 
+=begin
 #Start**********TODO remove this is for UNit test only ****************
 require '../AppHelpers/router'
 include Router
@@ -130,7 +131,7 @@ request  = Router::Request.new('http://localhost:4567/cars?name=honda&color=blue
 DataService.initialize(request)
 
 #End**********TODO remove this is for UNit test only ****************
-=begin
+
 
 # http(s):[Domain]
 #/datasevice/[Entity]/[ID]

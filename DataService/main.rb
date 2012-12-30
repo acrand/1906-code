@@ -1,6 +1,7 @@
-# myapp.rb required gems
+# main.rb required gems
 require 'rubygems'
 require 'sinatra'
+require 'sinatra/cross_origin'
 require 'json'
 require 'mongo' 
 require 'uri'
